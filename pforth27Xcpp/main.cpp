@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[])
+int not_main(int argc, const char * argv[])
 {
 
     // insert code here...
