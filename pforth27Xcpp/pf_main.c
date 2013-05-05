@@ -25,10 +25,10 @@
 	#define ERR(msg) /* { printf msg; } */
 #else
 	#include <stdio.h>
-#ifdef BBECKMAN
-#include <unistd.h> // bbeckman
-#include <stdlib.h> // bbeckman
-#endif
+    #ifdef BBECKMAN
+        #include <unistd.h>
+        #include <stdlib.h>
+    #endif
 	#define ERR(msg) { printf msg; }
 #endif
 
@@ -70,7 +70,9 @@ int main( int argc, char **argv )
 #ifdef BBECKMAN
     char *cwd = getcwd(NULL, 0);
     free(cwd);
-    int result = chdir("/Users/rebcabin/Dropbox/pforth_v27_20101121/pforth27Xcpp");
+    int result = chdir("/Users/rebcabin/Dropbox/pforth_v27_20101121/pforth27Xcpp/build/unix");
+    cwd = getcwd(NULL, 0);
+    free(cwd);
 #endif
     
 	const char *SourceName = NULL;
