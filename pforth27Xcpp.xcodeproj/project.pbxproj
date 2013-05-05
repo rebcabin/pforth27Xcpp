@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCA064D11735DFCB00FC21D2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCA064D01735DFCB00FC21D2 /* main.cpp */; };
 		FCA064D31735DFCB00FC21D2 /* pforth27Xcpp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCA064D21735DFCB00FC21D2 /* pforth27Xcpp.1 */; };
 		FCA064FB1735E1CD00FC21D2 /* pf_cglue.c in Sources */ = {isa = PBXBuildFile; fileRef = FCA064EC1735E1CD00FC21D2 /* pf_cglue.c */; };
 		FCA064FC1735E1CD00FC21D2 /* pf_clib.c in Sources */ = {isa = PBXBuildFile; fileRef = FCA064ED1735E1CD00FC21D2 /* pf_clib.c */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		FCA064CD1735DFCB00FC21D2 /* pforth27Xcpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pforth27Xcpp; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCA064D01735DFCB00FC21D2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FCA064D21735DFCB00FC21D2 /* pforth27Xcpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = pforth27Xcpp.1; sourceTree = "<group>"; };
 		FCA064DB1735E19D00FC21D2 /* pf_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_all.h; sourceTree = "<group>"; };
 		FCA064DC1735E19D00FC21D2 /* pf_cglue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_cglue.h; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				FCA065081735E28B00FC21D2 /* stdio */,
 				FCA064DA1735E14C00FC21D2 /* include */,
 				FCA064D91735E13F00FC21D2 /* csrc */,
-				FCA064D01735DFCB00FC21D2 /* main.cpp */,
 				FCA064D21735DFCB00FC21D2 /* pforth27Xcpp.1 */,
 			);
 			path = pforth27Xcpp;
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA064D11735DFCB00FC21D2 /* main.cpp in Sources */,
 				FCA064FB1735E1CD00FC21D2 /* pf_cglue.c in Sources */,
 				FCA064FC1735E1CD00FC21D2 /* pf_clib.c in Sources */,
 				FCA064FD1735E1CD00FC21D2 /* pf_core.c in Sources */,
