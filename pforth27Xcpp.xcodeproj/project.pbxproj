@@ -300,6 +300,10 @@
 		FCA064D71735DFCB00FC21D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DEBUG=1",
+					BBECKMAN,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -307,6 +311,7 @@
 		FCA064D81735DFCB00FC21D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = BBECKMAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

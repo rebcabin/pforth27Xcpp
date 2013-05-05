@@ -25,6 +25,10 @@
 	#define ERR(msg) /* { printf msg; } */
 #else
 	#include <stdio.h>
+#ifdef BBECKMAN
+#include <unistd.h> // bbeckman
+#include <stdlib.h> // bbeckman
+#endif
 	#define ERR(msg) { printf msg; }
 #endif
 
@@ -63,6 +67,12 @@ int main( int argc, char **argv )
 	const char *DicName = PF_DEFAULT_DICTIONARY;
 #endif /* !PF_STATIC_DIC */
 
+#ifdef BBECKMAN
+    char *cwd = getcwd(NULL, 0);
+    free(cwd);
+    int result = chdir("/Users/rebcabin/Dropbox/pforth_v27_20101121/pforth27Xcpp");
+#endif
+    
 	const char *SourceName = NULL;
 	char IfInit = FALSE;
 	char *s;
