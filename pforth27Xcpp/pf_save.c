@@ -598,7 +598,7 @@ DBUG(("pfLoadDictionary( %s )\n", FileName ));
 				MSG_NUM_D("     Entry Point     = ", sd->sd_EntryPoint );
 				MSG_NUM_D("     Cell Size       = ", sd->sd_CellSize );
 				MSG( (isDicBigEndian ? "     Big Endian Dictionary" :
-				                       "     Little  Endian Dictionary") );
+				                       "     Little Endian Dictionary") );
 				if( isDicBigEndian == IsHostLittleEndian() ) MSG(" !!!!");
 					EMIT_CR;
 			}
@@ -618,11 +618,17 @@ DBUG(("pfLoadDictionary( %s )\n", FileName ));
 				pfReportError("pfLoadDictionary", PF_ERR_CELL_SIZE_CONFLICT );
 				goto error;
 			}
+#ifdef BBECKMAN
+            int num_primitives = NUM_PRIMITIVES;
+            int sd_num_primitives = sd->sd_NumPrimitives;
+#if 1
 			if( sd->sd_NumPrimitives > NUM_PRIMITIVES )
 			{
 				pfReportError("pfLoadDictionary", PF_ERR_NOT_SUPPORTED );
 				goto error;
 			}
+#endif
+#endif
 
 /* Check to make sure that EndianNess of dictionary matches mode of pForth. */
 #if defined(PF_BIG_ENDIAN_DIC)

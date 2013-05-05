@@ -70,9 +70,10 @@ int main( int argc, char **argv )
 #ifdef BBECKMAN
     char *cwd = getcwd(NULL, 0);
     free(cwd);
-    int result = chdir("/Users/rebcabin/Dropbox/pforth_v27_20101121/pforth27Xcpp/build/unix");
+    int result = chdir("/Users/rebcabin/Dropbox/pforth_v27_20101121/pforth27Xcpp/fth");
     cwd = getcwd(NULL, 0);
     free(cwd);
+    // Force rebuilding of dic.
 #endif
     
 	const char *SourceName = NULL;

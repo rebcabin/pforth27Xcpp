@@ -45,7 +45,6 @@
 		FCA064DD1735E19D00FC21D2 /* pf_clib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_clib.h; sourceTree = "<group>"; };
 		FCA064DE1735E19D00FC21D2 /* pf_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_core.h; sourceTree = "<group>"; };
 		FCA064DF1735E19D00FC21D2 /* pf_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_guts.h; sourceTree = "<group>"; };
-		FCA064E01735E19D00FC21D2 /* pf_inc1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_inc1.h; sourceTree = "<group>"; };
 		FCA064E11735E19D00FC21D2 /* pf_io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_io.h; sourceTree = "<group>"; };
 		FCA064E21735E19D00FC21D2 /* pf_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_mem.h; sourceTree = "<group>"; };
 		FCA064E31735E19D00FC21D2 /* pf_save.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_save.h; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		FCA064F91735E1CD00FC21D2 /* pfcompil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pfcompil.c; sourceTree = "<group>"; };
 		FCA064FA1735E1CD00FC21D2 /* pfcustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pfcustom.c; sourceTree = "<group>"; };
 		FCA065091735E2BB00FC21D2 /* pf_io_stdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pf_io_stdio.c; path = stdio/pf_io_stdio.c; sourceTree = "<group>"; };
+		FCA0650B1735EF4D00FC21D2 /* pf_inc1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_inc1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,12 +138,12 @@
 		FCA064DA1735E14C00FC21D2 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				FCA0650B1735EF4D00FC21D2 /* pf_inc1.h */,
 				FCA064DB1735E19D00FC21D2 /* pf_all.h */,
 				FCA064DC1735E19D00FC21D2 /* pf_cglue.h */,
 				FCA064DD1735E19D00FC21D2 /* pf_clib.h */,
 				FCA064DE1735E19D00FC21D2 /* pf_core.h */,
 				FCA064DF1735E19D00FC21D2 /* pf_guts.h */,
-				FCA064E01735E19D00FC21D2 /* pf_inc1.h */,
 				FCA064E11735E19D00FC21D2 /* pf_io.h */,
 				FCA064E21735E19D00FC21D2 /* pf_mem.h */,
 				FCA064E31735E19D00FC21D2 /* pf_save.h */,
@@ -335,6 +335,7 @@
 				FCA064D81735DFCB00FC21D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
