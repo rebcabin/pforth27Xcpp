@@ -73,6 +73,55 @@
 		FCA064FA1735E1CD00FC21D2 /* pfcustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pfcustom.c; sourceTree = "<group>"; };
 		FCA065091735E2BB00FC21D2 /* pf_io_stdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pf_io_stdio.c; path = stdio/pf_io_stdio.c; sourceTree = "<group>"; };
 		FCA0650B1735EF4D00FC21D2 /* pf_inc1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_inc1.h; sourceTree = "<group>"; };
+		FCAA0A5C173E9EC000C772CE /* ansilocs.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ansilocs.fth; path = fth/ansilocs.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A5D173E9EC000C772CE /* bench.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bench.fth; path = fth/bench.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A5E173E9EC000C772CE /* c_struct.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = c_struct.fth; path = fth/c_struct.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A5F173E9EC000C772CE /* case.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = case.fth; path = fth/case.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A60173E9EC000C772CE /* condcomp.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = condcomp.fth; path = fth/condcomp.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A61173E9EC000C772CE /* coretest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = coretest.fth; path = fth/coretest.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A62173E9EC000C772CE /* filefind.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = filefind.fth; path = fth/filefind.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A63173E9EC000C772CE /* floats.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = floats.fth; path = fth/floats.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A64173E9EC000C772CE /* forget.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = forget.fth; path = fth/forget.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A65173E9EC000C772CE /* history.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = history.fth; path = fth/history.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A66173E9EC000C772CE /* loadhist.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = loadhist.fth; path = fth/loadhist.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A67173E9EC000C772CE /* loadp4th.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = loadp4th.fth; path = fth/loadp4th.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A68173E9EC000C772CE /* locals.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = locals.fth; path = fth/locals.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A69173E9EC000C772CE /* math.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = math.fth; path = fth/math.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A6A173E9EC000C772CE /* member.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = member.fth; path = fth/member.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A6B173E9EC000C772CE /* misc1.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = misc1.fth; path = fth/misc1.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A6C173E9EC000C772CE /* misc2.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = misc2.fth; path = fth/misc2.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A6D173E9EC000C772CE /* numberio.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = numberio.fth; path = fth/numberio.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A6E173E9EDC00C772CE /* private.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = private.fth; path = fth/private.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A6F173E9EDC00C772CE /* savedicd.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = savedicd.fth; path = fth/savedicd.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A70173E9EDC00C772CE /* see.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = see.fth; path = fth/see.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A71173E9EDC00C772CE /* siev.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = siev.fth; path = fth/siev.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A72173E9EDC00C772CE /* smart_if.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = smart_if.fth; path = fth/smart_if.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A73173E9EDC00C772CE /* strings.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = strings.fth; path = fth/strings.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A74173E9EDC00C772CE /* system.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = system.fth; path = fth/system.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A75173E9EDC00C772CE /* t_alloc.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_alloc.fth; path = fth/t_alloc.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A76173E9EDC00C772CE /* t_case.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_case.fth; path = fth/t_case.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A77173E9EDD00C772CE /* t_corex.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_corex.fth; path = fth/t_corex.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A78173E9EDD00C772CE /* t_floats.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_floats.fth; path = fth/t_floats.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A79173E9EDD00C772CE /* t_include.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_include.fth; path = fth/t_include.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A7A173E9EDD00C772CE /* t_load_defer.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_load_defer.fth; path = fth/t_load_defer.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A7B173E9EDD00C772CE /* t_load_pairs.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_load_pairs.fth; path = fth/t_load_pairs.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A7C173E9EDD00C772CE /* t_load_semi.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_load_semi.fth; path = fth/t_load_semi.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A7D173E9EDD00C772CE /* t_load_undef.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_load_undef.fth; path = fth/t_load_undef.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A7E173E9EDD00C772CE /* t_load.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_load.fth; path = fth/t_load.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A7F173E9EDD00C772CE /* t_locals.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_locals.fth; path = fth/t_locals.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A80173E9EDD00C772CE /* t_nolf.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_nolf.fth; path = fth/t_nolf.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A81173E9EDD00C772CE /* t_strings.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_strings.fth; path = fth/t_strings.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A82173E9EDD00C772CE /* t_tools.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t_tools.fth; path = fth/t_tools.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A83173E9EDD00C772CE /* termio.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = termio.fth; path = fth/termio.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A84173E9EDD00C772CE /* tester.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tester.fth; path = fth/tester.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A85173E9EDD00C772CE /* trace.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trace.fth; path = fth/trace.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A86173E9EDD00C772CE /* tut.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tut.fth; path = fth/tut.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A87173E9EDD00C772CE /* wordslik.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wordslik.fth; path = fth/wordslik.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A89173E9F1400C772CE /* clone.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = clone.fth; path = fth/utils/clone.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A8A173E9F1400C772CE /* dump_struct.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dump_struct.fth; path = fth/utils/dump_struct.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A8B173E9F1400C772CE /* load_file.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = load_file.fth; path = fth/utils/load_file.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A8C173E9F1400C772CE /* make_all256.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = make_all256.fth; path = fth/utils/make_all256.fth; sourceTree = SOURCE_ROOT; };
+		FCAA0A8D173E9F1400C772CE /* trace.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trace.fth; path = fth/utils/trace.fth; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +154,7 @@
 		FCA064CF1735DFCB00FC21D2 /* pforth27Xcpp */ = {
 			isa = PBXGroup;
 			children = (
+				FCAA0A5B173E9E8E00C772CE /* fth */,
 				FCA065081735E28B00FC21D2 /* stdio */,
 				FCA064DA1735E14C00FC21D2 /* include */,
 				FCA064D91735E13F00FC21D2 /* csrc */,
@@ -165,6 +215,78 @@
 				FCA065091735E2BB00FC21D2 /* pf_io_stdio.c */,
 			);
 			name = stdio;
+			sourceTree = "<group>";
+		};
+		FCAA0A5B173E9E8E00C772CE /* fth */ = {
+			isa = PBXGroup;
+			children = (
+				FCAA0A88173E9F0100C772CE /* utils */,
+				FCAA0A6E173E9EDC00C772CE /* private.fth */,
+				FCAA0A6F173E9EDC00C772CE /* savedicd.fth */,
+				FCAA0A70173E9EDC00C772CE /* see.fth */,
+				FCAA0A71173E9EDC00C772CE /* siev.fth */,
+				FCAA0A72173E9EDC00C772CE /* smart_if.fth */,
+				FCAA0A73173E9EDC00C772CE /* strings.fth */,
+				FCAA0A74173E9EDC00C772CE /* system.fth */,
+				FCAA0A8E173EA16000C772CE /* tests */,
+				FCAA0A83173E9EDD00C772CE /* termio.fth */,
+				FCAA0A84173E9EDD00C772CE /* tester.fth */,
+				FCAA0A85173E9EDD00C772CE /* trace.fth */,
+				FCAA0A86173E9EDD00C772CE /* tut.fth */,
+				FCAA0A87173E9EDD00C772CE /* wordslik.fth */,
+				FCAA0A5C173E9EC000C772CE /* ansilocs.fth */,
+				FCAA0A5D173E9EC000C772CE /* bench.fth */,
+				FCAA0A5E173E9EC000C772CE /* c_struct.fth */,
+				FCAA0A5F173E9EC000C772CE /* case.fth */,
+				FCAA0A60173E9EC000C772CE /* condcomp.fth */,
+				FCAA0A61173E9EC000C772CE /* coretest.fth */,
+				FCAA0A62173E9EC000C772CE /* filefind.fth */,
+				FCAA0A63173E9EC000C772CE /* floats.fth */,
+				FCAA0A64173E9EC000C772CE /* forget.fth */,
+				FCAA0A65173E9EC000C772CE /* history.fth */,
+				FCAA0A66173E9EC000C772CE /* loadhist.fth */,
+				FCAA0A67173E9EC000C772CE /* loadp4th.fth */,
+				FCAA0A68173E9EC000C772CE /* locals.fth */,
+				FCAA0A69173E9EC000C772CE /* math.fth */,
+				FCAA0A6A173E9EC000C772CE /* member.fth */,
+				FCAA0A6B173E9EC000C772CE /* misc1.fth */,
+				FCAA0A6C173E9EC000C772CE /* misc2.fth */,
+				FCAA0A6D173E9EC000C772CE /* numberio.fth */,
+			);
+			name = fth;
+			sourceTree = "<group>";
+		};
+		FCAA0A88173E9F0100C772CE /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCAA0A89173E9F1400C772CE /* clone.fth */,
+				FCAA0A8A173E9F1400C772CE /* dump_struct.fth */,
+				FCAA0A8B173E9F1400C772CE /* load_file.fth */,
+				FCAA0A8C173E9F1400C772CE /* make_all256.fth */,
+				FCAA0A8D173E9F1400C772CE /* trace.fth */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		FCAA0A8E173EA16000C772CE /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAA0A75173E9EDC00C772CE /* t_alloc.fth */,
+				FCAA0A76173E9EDC00C772CE /* t_case.fth */,
+				FCAA0A77173E9EDD00C772CE /* t_corex.fth */,
+				FCAA0A78173E9EDD00C772CE /* t_floats.fth */,
+				FCAA0A79173E9EDD00C772CE /* t_include.fth */,
+				FCAA0A7A173E9EDD00C772CE /* t_load_defer.fth */,
+				FCAA0A7B173E9EDD00C772CE /* t_load_pairs.fth */,
+				FCAA0A7C173E9EDD00C772CE /* t_load_semi.fth */,
+				FCAA0A7D173E9EDD00C772CE /* t_load_undef.fth */,
+				FCAA0A7E173E9EDD00C772CE /* t_load.fth */,
+				FCAA0A7F173E9EDD00C772CE /* t_locals.fth */,
+				FCAA0A80173E9EDD00C772CE /* t_nolf.fth */,
+				FCAA0A81173E9EDD00C772CE /* t_strings.fth */,
+				FCAA0A82173E9EDD00C772CE /* t_tools.fth */,
+			);
+			name = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +425,8 @@
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"DEBUG=1",
 					BBECKMAN,
+					PF_LITTLE_ENDIAN_DIC,
+					PF_SUPPORT_FP,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -311,7 +435,11 @@
 		FCA064D81735DFCB00FC21D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = BBECKMAN;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					PF_LITTLE_ENDIAN_DIC,
+					PF_SUPPORT_FP,
+					BBECKMAN,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
