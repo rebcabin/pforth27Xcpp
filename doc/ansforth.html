@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!Converted with LaTeX2HTML 95 (Thu Jan 19 1995) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds >
+<HEAD>
+<TITLE>Using ANS Forth</TITLE>
+</HEAD>
+<BODY>
+<meta name="description" value="No Title">
+<meta name="keywords" value="ansforth">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+<P>
+ <BR> <HR><A NAME=tex2html1 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/icons/next_motif.gif"></A>   <IMG ALIGN=BOTTOM ALT="up" SRC="/icons/up_motif_gr.gif">   <IMG ALIGN=BOTTOM ALT="previous" SRC="/icons/previous_motif_gr.gif">         <BR>
+<B> Next:</B> <A NAME=tex2html2 HREF="node1.html"> No messing with </A>
+<BR> <HR> <P>
+ <H4>
+<P>
+<b> <H1> Using ANS Forth:</H1> <BR> 
+A report from the trenches</b>
+<P>
+We will take a look at the practicalities of using ANS Forth systems and
+see what present systems are providing.
+<P>
+<UL><LI> What ANS Forth's are available
+<LI> The basics: loading the system
+<LI> File I/O
+<LI> What is <b> really</b> different
+<LI> Summary: Can it be used for large projects ?
+</UL>
+<P>
+<b> <H1> What ANS Forths are available ?</H1></b>
+<P>
+The simple answer is: <b> none</b>
+<P>
+There are <i> no</i> Forth systems around that satisfy the ANS standard document
+as it is strictly interpreted.
+<P>
+The primary reason for this is the expense of the offical standard document,
+and it is not proper to claim standards compliance to
+<A HREF=../forth/dpans.html>the draft standard</A>.
+<P>
+Fortunately, this is of no real practical impact.  There are several systems
+available that are modeled on the draft standard; they are not officially
+standard, but for all practical purposes they are standard systems.
+<P>
+All of these systems are in the public domain or shareware, they include
+<P>
+<UL><LI> <tt> F68KANS</tt>, for the 68xxx family by Joerg Plewe
+(<tt> jps@Forth-eV.de</tt>)
+<LI> <tt> PFE</tt>, for MS-DOS, Linux, Unix by Dirk Zoller
+<BR>
+(<tt> duz@roxi.rz.fth-mannheim.de</tt>)
+<LI> <tt> gForth</tt> by Bernd Paysan (<tt> paysan@informatik.tu-muenchen.de</tt>)
+<LI> <tt> iForth</tt> by Marcel Hendrix (<tt> mhx@bbs.forth-ev.de</tt>)
+<LI> <tt> ThisForth</tt>, for practically anything with a C compiler, by Wil
+Baden
+<LI> <tt> Win32For</tt> by Tom Zimmer and Andrew McKewan
+</UL>
+<P>
+The last two in the above list are not strictly compliant, but are close
+enough to put in this list.
+<P>
+There are <i> no</i> commercial systems that claim compliance.
+<P>
+There is are two pieces of software that you can use to test compliance to
+the standard:
+<P>
+<UL><LI> To test the compliance of the <i> compiler</i>, there is John Hayes'
+<A HREF=ftp://ftp.taygeta.com/pub/Forth/ANS/tester.fr>test</A> suite
+( there is a <A HREF=ftp://ftp.taygeta.com/pub/Forth/ANS/core.fr> second file</A>).
+<LI> To test the compliance of the <i> application</i>, there is Jet Thomas'
+<A HREF=ftp://ftp.taygeta.com/pub/Forth/ANS/stand4th.zip><tt> Stand4th</tt> program</A>.
+</UL>
+<P>
+<H1> <b> Loading the system</b> (MS-DOS and Unix)</H1>
+<P>
+These systems are ``toolbox'' Forth systems ---- Forth is only one tool in
+the programmers toolbox.  Source files are edited from outside of Forth,
+external debugging tools are also required as no special debuggers are
+provided from <i> within</i> these Forths. (An excellant
+<A HREF=ftp://ftp.taygeta.com/pub/Forth/ANS/debugger.ans> ANS debugger</A> is
+the one written by <b> Joerg Plewe</b>, it was published in <b> Forth
+Dimensions, XVII, Number 1</b>).
+<P>
+To load these Forths, give the executable name on the command line
+listing any files to initially load as command line arguments.
+Various command line switches can be used to set up the initial behavior
+of the system (for example <tt> PFE</tt> can be told to be case sensitive,
+instead of the default non-sensitive).
+<P>
+There is no default configuration file that is read at startup.
+<P>
+<tt> ThisForth</tt> can be told to <i> interpret</i> the command line arguments
+and not just treat the arguments as file names to load.
+<P>
+Under Unix/Linux, both <tt> ThisForth</tt> and <tt> PFE</tt> can be run as
+stand-alone scripts (in place of <tt> perl</tt> or <tt> Bourne</tt> shell scripts)
+by placing the following line as the first line of the Forth source file
+that you want to run:
+<P>
+<tt> #! /usr/local/bin/forth</tt>
+<P>
+To run the program, just type the name of the file.
+<P>
+<P><IMG  ALIGN=BOTTOM ALT="" SRC="img1.gif"><P>
+<P>
+Once the system is running, external files can be loaded and interpreted
+through standard ANS words, e.g.:
+<P>
+<tt> s&quot; filename&quot; included</tt>
+<P>
+this is equivalent to the <tt> FPC</tt> sequence,
+<P>
+<tt> fload filename</tt>
+<P>
+A file can also be loaded and interpreted under <i> program</i> control by
+opening a file and including it,
+<tt> s&quot; filename&quot; r/w open-file</tt>
+<BR>
+<tt> abort&quot; file open failed&quot;  include-file </tt>
+<P>
+<H1> <b> File I/O</b></H1>
+<P>
+We have seen a little bit of how file I/O is handled.
+<P>
+<i> Personal note</i>: ANS Forth provides for Blocks or Files.  When running
+Forth on top of an operating system that provides its own file system,
+I find Blocks to be impratical.  They are not compatible with all the other
+tools that I use external to Forth itself for managing my source code.
+<P>
+A file is opened with the <tt> open-file</tt> word which returns a file handle
+and a success/failure flag.  This handle is then used for subsequent access
+to the file.
+<P>
+The <tt> File Access</tt> wordset is fairly minimal, it provides the ability
+to get/set a position within a file and to read/write bytes or lines.
+There are no words to directly read/write a number in/to an ASCII file.
+For reading one needs to
+read in the characters and interpret them as a number separately.
+For writing, an integer has to be formatted as characters and then written
+out. <A HREF=ftp://ftp.taygeta.com/pub/Forth/ANS/fileio.fo> A separate set of
+words</A> are needed for this.
+
+<P>
+<H1> <b> What is REALLY different</b></H1>
+</H4><BR> <HR>
+<UL> 
+<LI> <A NAME=tex2html3 HREF="node1.html#SECTION00010000000000000000"> No messing with the dictionary headers</A>
+<LI> <A NAME=tex2html4 HREF="node2.html#SECTION00020000000000000000"> INVERT, 0= and NOT</A>
+<LI> <A NAME=tex2html5 HREF="node3.html#SECTION00030000000000000000"> POSTPONE</A>
+<LI> <A NAME=tex2html6 HREF="node4.html#SECTION00040000000000000000"> UNLOOP</A>
+<LI> <A NAME=tex2html7 HREF="node5.html#SECTION00050000000000000000"> Division</A>
+<LI> <A NAME=tex2html8 HREF="node6.html#SECTION00060000000000000000"> Wordlists</A>
+<LI> <A NAME=tex2html9 HREF="node7.html#SECTION00070000000000000000">   About this document ... </A>
+</UL>
+<BR> <HR><A NAME=tex2html1 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/icons/next_motif.gif"></A>
+<IMG ALIGN=BOTTOM ALT="up" SRC="/icons/up_motif_gr.gif">   <IMG ALIGN=BOTTOM ALT="previous" SRC="/icons/previous_motif_gr.gif">         <BR>
+<B> Next:</B> <A NAME=tex2html2 HREF="node1.html"> No messing with </A>
+<BR> <HR> <P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Skip Carter <BR>
+Mon Feb 26 08:26:58 PST 1996</I>
+</ADDRESS>
+</BODY>
