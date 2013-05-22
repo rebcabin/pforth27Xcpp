@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC006B0B1748439900FE4785 /* ttester.fs in Sources */ = {isa = PBXBuildFile; fileRef = FC006B091748439900FE4785 /* ttester.fs */; };
 		FCA064D31735DFCB00FC21D2 /* pforth27Xcpp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCA064D21735DFCB00FC21D2 /* pforth27Xcpp.1 */; };
 		FCA064FB1735E1CD00FC21D2 /* pf_cglue.c in Sources */ = {isa = PBXBuildFile; fileRef = FCA064EC1735E1CD00FC21D2 /* pf_cglue.c */; };
 		FCA064FC1735E1CD00FC21D2 /* pf_clib.c in Sources */ = {isa = PBXBuildFile; fileRef = FCA064ED1735E1CD00FC21D2 /* pf_clib.c */; };
@@ -38,6 +39,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC006AF91748414600FE4785 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = SOURCE_ROOT; };
+		FC006AFA1748415900FE4785 /* releases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = releases.txt; sourceTree = SOURCE_ROOT; };
+		FC006AFC1748439900FE4785 /* core.fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = core.fr; path = anstests0.9/core.fr; sourceTree = SOURCE_ROOT; };
+		FC006AFD1748439900FE4785 /* coreexttest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = coreexttest.fth; path = anstests0.9/coreexttest.fth; sourceTree = SOURCE_ROOT; };
+		FC006AFE1748439900FE4785 /* coreplustest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = coreplustest.fth; path = anstests0.9/coreplustest.fth; sourceTree = SOURCE_ROOT; };
+		FC006AFF1748439900FE4785 /* doubletest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = doubletest.fth; path = anstests0.9/doubletest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B001748439900FE4785 /* exceptiontest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = exceptiontest.fth; path = anstests0.9/exceptiontest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B011748439900FE4785 /* filetest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = filetest.fth; path = anstests0.9/filetest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B021748439900FE4785 /* memorytest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = memorytest.fth; path = anstests0.9/memorytest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B031748439900FE4785 /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = readme.html; path = anstests0.9/readme.html; sourceTree = SOURCE_ROOT; };
+		FC006B041748439900FE4785 /* runtests.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = runtests.fth; path = anstests0.9/runtests.fth; sourceTree = SOURCE_ROOT; };
+		FC006B051748439900FE4785 /* searchordertest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = searchordertest.fth; path = anstests0.9/searchordertest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B061748439900FE4785 /* stringtest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stringtest.fth; path = anstests0.9/stringtest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B071748439900FE4785 /* tester.fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tester.fr; path = anstests0.9/tester.fr; sourceTree = SOURCE_ROOT; };
+		FC006B081748439900FE4785 /* toolstest.fth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = toolstest.fth; path = anstests0.9/toolstest.fth; sourceTree = SOURCE_ROOT; };
+		FC006B091748439900FE4785 /* ttester.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ttester.fs; path = anstests0.9/ttester.fs; sourceTree = SOURCE_ROOT; };
+		FC006B0A1748439900FE4785 /* changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = changes.txt; path = anstests0.9/changes.txt; sourceTree = SOURCE_ROOT; };
 		FCA064CD1735DFCB00FC21D2 /* pforth27Xcpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pforth27Xcpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA064D21735DFCB00FC21D2 /* pforth27Xcpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = pforth27Xcpp.1; sourceTree = "<group>"; };
 		FCA064DB1735E19D00FC21D2 /* pf_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pf_all.h; sourceTree = "<group>"; };
@@ -135,6 +153,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC006AFB1748438200FE4785 /* anstests0.9 */ = {
+			isa = PBXGroup;
+			children = (
+				FC006AFC1748439900FE4785 /* core.fr */,
+				FC006AFD1748439900FE4785 /* coreexttest.fth */,
+				FC006AFE1748439900FE4785 /* coreplustest.fth */,
+				FC006AFF1748439900FE4785 /* doubletest.fth */,
+				FC006B001748439900FE4785 /* exceptiontest.fth */,
+				FC006B011748439900FE4785 /* filetest.fth */,
+				FC006B021748439900FE4785 /* memorytest.fth */,
+				FC006B031748439900FE4785 /* readme.html */,
+				FC006B041748439900FE4785 /* runtests.fth */,
+				FC006B051748439900FE4785 /* searchordertest.fth */,
+				FC006B061748439900FE4785 /* stringtest.fth */,
+				FC006B071748439900FE4785 /* tester.fr */,
+				FC006B081748439900FE4785 /* toolstest.fth */,
+				FC006B091748439900FE4785 /* ttester.fs */,
+				FC006B0A1748439900FE4785 /* changes.txt */,
+			);
+			name = anstests0.9;
+			sourceTree = "<group>";
+		};
 		FCA064C41735DFCB00FC21D2 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +194,8 @@
 		FCA064CF1735DFCB00FC21D2 /* pforth27Xcpp */ = {
 			isa = PBXGroup;
 			children = (
+				FC006AFA1748415900FE4785 /* releases.txt */,
+				FC006AF91748414600FE4785 /* readme.txt */,
 				FCAA0A5B173E9E8E00C772CE /* fth */,
 				FCA065081735E28B00FC21D2 /* stdio */,
 				FCA064DA1735E14C00FC21D2 /* include */,
@@ -271,6 +313,7 @@
 		FCAA0A8E173EA16000C772CE /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				FC006AFB1748438200FE4785 /* anstests0.9 */,
 				FCAA0A75173E9EDC00C772CE /* t_alloc.fth */,
 				FCAA0A76173E9EDC00C772CE /* t_case.fth */,
 				FCAA0A77173E9EDD00C772CE /* t_corex.fth */,
@@ -354,6 +397,7 @@
 				FCA065061735E1CD00FC21D2 /* pfcompil.c in Sources */,
 				FCA065071735E1CD00FC21D2 /* pfcustom.c in Sources */,
 				FCA0650A1735E2BB00FC21D2 /* pf_io_stdio.c in Sources */,
+				FC006B0B1748439900FE4785 /* ttester.fs in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
